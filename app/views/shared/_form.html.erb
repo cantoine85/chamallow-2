@@ -1,0 +1,7 @@
+<%= simple_form_for @jam_session do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :date %>
+  <%= f.input :location %>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end  %>
