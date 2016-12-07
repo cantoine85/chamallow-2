@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :user_songs
   has_many :songs, through: :user_songs
+  has_many :jam_session_users
+  has_many :jam_sessions, through: :jam_session_users
 end
