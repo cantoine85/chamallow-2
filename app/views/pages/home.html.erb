@@ -1,2 +1,5 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class='home-banner'>
+  <h1>Time to jam</h1>
+  <%= image_tag "https://unsplash.it/300/300?random" %>
+  <%= link_to "+", new_jam_session_path, class:'btn btn-primary' %>
+</div>
