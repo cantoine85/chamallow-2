@@ -1,4 +1,9 @@
 class JamSessionsController < ApplicationController
+
+  def index
+    @jam_sessions = JamSession.all
+  end
+
   def new
     @jam_session = JamSession.new
   end
@@ -13,6 +18,8 @@ class JamSessionsController < ApplicationController
   end
 
   def show
+    @jam_session = JamSession.find(params[:id])
+    render 'jam_sessions/show', jam_session: @jam_session
   end
 
   private

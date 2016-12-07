@@ -1,0 +1,9 @@
+<div class='container'>
+  <% @jam_sessions.each do |jam_session| %>
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render 'jam_sessions/show', jam_session: jam_session %>
+      </div>
+    </div>
+  <% end  %>
+</div>
